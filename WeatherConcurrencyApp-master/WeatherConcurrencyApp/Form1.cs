@@ -46,5 +46,20 @@ namespace WeatherConcurrencyApp
         {
            openWeather = await httpOpenWeatherClient.GetWeatherByCityNameAsync("Managua");
         }
+
+        private void flpContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
