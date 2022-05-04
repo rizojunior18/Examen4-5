@@ -42,6 +42,7 @@ namespace WeatherConcurrencyApp
             // flpContent
             // 
             this.flpContent.AutoScroll = true;
+            this.flpContent.BackColor = System.Drawing.Color.DarkGray;
             this.flpContent.Controls.Add(this.richTextBox1);
             this.flpContent.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flpContent.Location = new System.Drawing.Point(0, 79);
@@ -52,6 +53,7 @@ namespace WeatherConcurrencyApp
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Cornsilk;
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnOk);
@@ -60,6 +62,7 @@ namespace WeatherConcurrencyApp
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(645, 73);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnOk
             // 
@@ -74,7 +77,7 @@ namespace WeatherConcurrencyApp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(212, 33);
+            this.label1.Location = new System.Drawing.Point(283, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 2;
@@ -83,7 +86,7 @@ namespace WeatherConcurrencyApp
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(290, 30);
+            this.comboBox1.Location = new System.Drawing.Point(360, 30);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 3;
@@ -92,7 +95,7 @@ namespace WeatherConcurrencyApp
             // 
             this.richTextBox1.Location = new System.Drawing.Point(3, 3);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(620, 413);
+            this.richTextBox1.Size = new System.Drawing.Size(552, 334);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
